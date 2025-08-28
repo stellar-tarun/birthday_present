@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1, h2, p {
+      color: #fff;
+      margin: 10px;
+    }
+
+    .welcome h1 {
+      font-size: 3rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .button {
+      background: #fff;
+      color: #ee9ca7;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #ffdde1;
+      color: #fff;
+    }
+
+    #giftMessage {
+      display: none;
+      font-size: 1.5rem;
+      margin-top: 20px;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="welcome">
+    <h1>🎉 Happy Birthday, My Love ❤️ 🎂</h1>
+    <p>Today is all about you 🌸</p>
+  </section>
+
+  <section>
+    <h2>Our Beautiful Memories 📸</h2>
+    <div class="gallery">
+      <img src="image/photo1.jpg"  alt="image 1">
+      <img src="image/photo2.jpg" alt="image 2">
+      <img src="image/photo3.jpg" alt="image 3">
+    </div>
+  </section>
+
+  <section>
+    <h2>A Little Note Just for You 📝</h2>
+    <p>Dear My_Love,</p>
+    <p>You are the most special part of my life. Thank you for being my happiness, my strength, and my love. I’m so lucky to have you. May this birthday bring you endless smiles and joy, just like you bring to me every day. ❤️</p>
+    <p>Sorry maine tumse baat nahi ki and sorry for my behaviour,I love You ❤️</p>
+  </section>
+
+  <section>
+    <h2>I Have a Surprise 🎁</h2>
+    <button class="button" onclick="showGift()">Click to Open</button>
+    <p id="giftMessage">💖 My best gift is YOU. I made this website only for you! 💖, 😊I did my best with what i knew and I took some help from ai.😊</p>
+  </section>
+
+  <section>
+    <h2>Forever Yours 💕</h2>
+    <p>Happy Birthday once again, my love! 🎂✨</p>
+  </section>
+
+  <script>
+    function showGift() {
+      document.getElementById('giftMessage').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
